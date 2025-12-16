@@ -5,8 +5,8 @@
 //                 Julien Wajsberg <https://github.com/julienw>
 // TypeScript Version: 2.3
 
-import type { default as helmet, HelmetOptions } from "helmet";
-import { Middleware } from "koa";
+import type { default as helmet, HelmetOptions } from 'helmet';
+import { Middleware } from 'koa';
 
 type Helmet = typeof helmet;
 

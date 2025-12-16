@@ -46,15 +46,15 @@ You can see more in [the documentation](https://helmetjs.github.io).
 ## Example
 
 ```js
-import Koa from "koa";
-import helmet from "koa-helmet";
+import Koa from 'koa';
+import helmet from 'koa-helmet';
 
 const app = new Koa();
 
 app.use(helmet());
 
 app.use((ctx) => {
-  ctx.body = "Hello World";
+  ctx.body = 'Hello World';
 });
 
 app.listen(4000);

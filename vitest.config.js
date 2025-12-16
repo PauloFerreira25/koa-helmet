@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config";
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
@@ -7,24 +7,24 @@ export default defineConfig({
       {
         extends: true,
         test: {
-          name: "koa-v2",
-          include: ["test/**/*.spec.ts"],
+          name: 'koa-v2',
+          include: ['test/**/*.spec.ts'],
         },
         resolve: {
           alias: {
-            koa: "koa-2",
+            koa: 'koa-2',
           },
         },
       },
       {
         extends: true,
         test: {
-          name: "koa-v3",
-          include: ["test/**/*.spec.ts"],
+          name: 'koa-v3',
+          include: ['test/**/*.spec.ts'],
         },
         resolve: {
           alias: {
-            koa: "koa-3",
+            koa: 'koa-3',
           },
         },
       },

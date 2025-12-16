@@ -1,9 +1,9 @@
 // @ts-check
 
-import eslint from "@eslint/js";
-import configPrettier from "eslint-config-prettier";
-import tseslint from "typescript-eslint";
-import globals from "globals";
+import eslint from '@eslint/js';
+import configPrettier from 'eslint-config-prettier';
+import tseslint from 'typescript-eslint';
+import globals from 'globals';
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -20,8 +20,8 @@ export default tseslint.config(
       },
     },
     rules: {
-      "@typescript-eslint/no-require-imports": "off",
-      "@typescript-eslint/unbound-method": "off",
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/unbound-method': 'off',
     },
   },
   /**
@@ -30,7 +30,7 @@ export default tseslint.config(
    * Ignore type-checking
    */
   {
-    files: ["**/*.{js,mjs,cjs}"],
+    files: ['**/*.{js,mjs,cjs}'],
     ...tseslint.configs.disableTypeChecked,
   },
 
@@ -38,5 +38,5 @@ export default tseslint.config(
    * Disable rules that could conflict with prettier.
    * This should be the last rule.
    */
-  configPrettier,
+  configPrettier
 );
