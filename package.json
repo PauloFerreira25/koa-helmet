@@ -4,7 +4,7 @@
   "description": "Security header middleware collection for koa",
   "type": "module",
   "license": "MIT",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "main": "lib/koa-helmet.js",
   "typings": "./koa-helmet.d.ts",
   "files": [
