@@ -14,7 +14,7 @@
   "scripts": {
     "check": "npm run format:check && npm run lint && npm run test && npm run typecheck",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format:check": "prettier --write . --log-level debug",
     "lint": "eslint .",
     "test": "vitest",
     "typecheck": "tsc --noEmit --pretty"
